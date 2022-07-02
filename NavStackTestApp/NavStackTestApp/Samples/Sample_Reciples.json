@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "name": "Apple Pie",
+        "type": ".dessert",
+        "description": "A delicious desert filled with apples, wrapped in a flakey crust",
+        "ingredients":[
+            {
+                "name": "Green Apple",
+                "quantity": 3
+            },
+            {
+                "name": "Pie Crust",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Salad",
+        "type": ".appatizer",
+        "description": "A quick and healthy salad",
+        "ingredients":[
+            {
+                "name": "Lettuce",
+                "quantity": 1
+            },
+            {
+                "name": "Croutons",
+                "quantity": 10
+            },
+            {
+                "name": "Dressing",
+                "quantity": 1
+            }
+        ]
+    }
+]

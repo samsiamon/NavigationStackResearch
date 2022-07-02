@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Green Apple",
+        "description": "A sour, green fruit"
+    },
+    {
+        "id": 1,
+        "name": "Pie Crust",
+        "description": "A store-bought pie crust"
+    },
+    {
+        "id": 2,
+        "name": "Sugar",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "name": "Lettuce",
+        "description": "A leafy, green vegetable"
+    },
+    {
+        "id": 4,
+        "name": "Croutons",
+        "description": ""
+    },
+    {
+        "id": 5,
+        "name": "Dressing",
+        "description": "A tasty dressing of your choosing"
+    }
+]
