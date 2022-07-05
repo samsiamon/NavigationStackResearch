@@ -7,27 +7,32 @@
 
 import Foundation
 
-enum RecipeType {
+enum RecipeType: Decodable {
     case breakfast, lunch, dinner, dessert, appatizer, misc
 }
 
-class Recipe: Decodable, Identifiable {
+struct Recipe: Identifiable, Hashable, Codable {
     var name: String
-    var type: RecipeType
+    var type: String
     var description: String
-    var ingredients : [Ingredient:Int]
+    var ingredients: [String]
+    var ingredientsCount: [Int]
     var id: Int
 
     init(
         name: String,
-        type: RecipeType = .misc,
+        type: String = "misc",
         description: String = "",
-        ingredients: [Ingredient],
+        ingredients: [String],
+        ingredientsCount: [Int],
         id: Int
     ){
         self.name = name
         self.type = type
         self.description = description
         self.ingredients = ingredients
+        self.ingredientsCount = ingredientsCount
+        self.id = id
     }
 }
+

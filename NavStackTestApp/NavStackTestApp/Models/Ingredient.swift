@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Ingredient: Decodable, Identifiable, Hashable {
+struct Ingredient: Codable, Identifiable, Hashable {
     var name: String
     var id: Int
     var description: String
     var quantinity: Int?
 
-    init(name: String, description: String = "", id: Int, quantinity: Int = nil) {
+    init(name: String, description: String = "", id: Int, quantinity: Int? = nil) {
         self.name = name
         self.description = description
         self.id = id

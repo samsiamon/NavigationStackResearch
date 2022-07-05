@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Apple Pie",
+        "type": "dessert",
+        "description": "A delicious desert filled with apples, wrapped in a flakey crust",
+        "ingredients": [
+            "Green Apple",
+            "Pie Crust"
+        ],
+        "ingredientsCount":[
+            4,
+            1
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Salad",
+        "type": "appatizer",
+        "description": "A quick and healthy salad",
+        "ingredients": [
+            "Lettuce",
+            "Croutons",
+            "Dressing"
+        ],
+        "ingredientsCount":[
+            1,
+            10,
+            1
+        ]
+    }
+]
