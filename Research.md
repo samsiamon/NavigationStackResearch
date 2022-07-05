@@ -126,3 +126,19 @@ var body: some View {
     }
 }
 ```
+
+## Important Notes about deprecated swift structs.
+With the release of iOS 16, the struct `NavigationView` will be deprecated. It is recommended to to migrate to new navigation types. It is recommended to stop doing this:
+```swift
+NavigationView { // This is deprecated.
+    /* content */
+}
+.navigationViewStyle(.stack)
+```
+ and instead do this:
+ ```swift
+ NavigationStack {
+    /* content */
+}
+ ```
+More information on migrating to `NavigationStack` can be found [here](https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types).
