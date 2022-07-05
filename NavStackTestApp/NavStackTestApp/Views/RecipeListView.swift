@@ -9,16 +9,12 @@ import SwiftUI
 
 struct RecipeListView: View {
 
-    @State var path: [Recipe] = []
     @State var recipes: [Recipe]
 
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack {
             List(recipes) { recipe in
-                NavigationLink(value: recipe, label:{
-                    RecipePreviewView(recipePreview: recipe)
-                    ButtonView()
-                })
+                NavigationLink(value: recipe, label: {RecipePreviewView(recipePreview: recipe)})
             }
             .navigationDestination(for: Recipe.self) { recipe in
                 RecipeView(recipe: recipe)

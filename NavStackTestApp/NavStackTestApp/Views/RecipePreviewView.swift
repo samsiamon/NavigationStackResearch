@@ -23,8 +23,6 @@ struct RecipePreviewView: View {
                         .font(.body)
                 }
                 .padding()
-//                Image(systemName: "chevron.right")
-//                    .padding()
             }
         }
         .frame(width: .infinity, height: 100)
