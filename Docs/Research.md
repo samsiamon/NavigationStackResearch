@@ -43,7 +43,7 @@ NavigationStack(path: $viewPath) {
         NavigationLink(carrier.name, value: carrier)
     }
     .navigationDestination(for: Carrier.self) { carrier in
-        SelectCarrierView(carrier: carrier)
+        SelectVehicleView(carrier: carrier)
     }
     
 }
