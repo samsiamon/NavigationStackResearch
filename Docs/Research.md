@@ -20,7 +20,7 @@ NavigationStack {
     }
     // 1.
     .navigationDestination(for: Carrier.self) { carrier in
-        SelectCarrierView(carrier: carrier)
+        SelectVehicleView(carrier: carrier)
     }
     
 }
